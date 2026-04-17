@@ -1,8 +1,8 @@
 ticker,value_score,company_name,mcap_billions
-TBBK,15.371001174400002,"The Bancorp, Inc.",2.603359488
-PFG,19.9304217504,"Principal Financial Group, Inc.",20.853035008
-MCY,24.3341131456,Mercury General Corporation,5.332262912
-PRA,44.3451765216,ProAssurance Corporation,1.272130432
-WD,17.4663767808,"Walker & Dunlop, Inc.",1.722415616
-ENVX,-26.1771067072,Enovix Corporation,1.438025856
-JOBY,-39.2044408992,"Joby Aviation, Inc.",9.029462016
+TBBK,25.0,"The Bancorp, Inc.",2.603359488
+PFG,29.5,"Principal Financial Group, Inc.",20.853035008
+MCY,71.0,Mercury General Corporation,5.332262912
+PRA,87.5,ProAssurance Corporation,1.272130432
+WD,29.5,"Walker & Dunlop, Inc.",1.722415616
+ENVX,0.0,Enovix Corporation,1.438025856
+JOBY,12.5,"Joby Aviation, Inc.",9.029462016
