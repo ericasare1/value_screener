@@ -1,0 +1,2 @@
+[console_scripts]
+vscreen = value_screener.cli:main

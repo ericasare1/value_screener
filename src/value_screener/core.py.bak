@@ -1,0 +1,68 @@
+import logging
+import numpy as np
+import pandas as pd
+from edgartools import Company, Filing
+
+logger = logging.getLogger(__name__)
+
+def safe_get(df, concepts):
+    """Safely extract XBRL concept value."""
+    for concept in concepts:
+        try:
+            row = df[df["concept"] == concept]
+            if not row.empty and len(row.iloc[0]) > 0:
+                val = float(row.iloc[0].iloc[-1])
+                if not np.isnan(val):
+                    return val
+        except (IndexError, ValueError, KeyError):
+            continue
+    return np.nan
+
+def compute_value_metrics(company: Company, filing: Filing) -> dict:
+    """Extract Buffett/Lynch metrics from XBRL filing."""
+    metrics = {}
+    try:
+        xbrl = filing.xbrl()
+        statements = xbrl.statements
+        bs = statements.balance_sheet()
+        inc = statements.income_statement()
+        cf = statements.cashflow_statement()
+
+        # Balance Sheet
+        total_assets = safe_get(bs, ["us-gaap:Assets", "Assets"])
+        total_liab = safe_get(bs, ["us-gaap:Liabilities", "Liabilities"])
+        equity = total_assets - total_liab if pd.notna(total_assets) and pd.notna(total_liab) else np.nan
+        curr_assets = safe_get(bs, ["us-gaap:AssetsCurrent", "CurrentAssets"])
+        curr_liab = safe_get(bs, ["us-gaap:LiabilitiesCurrent", "CurrentLiabilities"])
+
+        # Income/Cash Flow
+        revenue = safe_get(inc, ["us-gaap:Revenues", "Revenues"])
+        net_income = safe_get(inc, ["us-gaap:NetIncomeLoss", "NetIncomeLoss"])
+        op_cf = safe_get(cf, ["us-gaap:NetCashProvidedByUsedInOperatingActivities"])
+        capex = abs(safe_get(cf, ["us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"]))
+        fcf = op_cf - capex if pd.notna(op_cf) and pd.notna(capex) else np.nan
+
+        # Derived metrics
+        roe = (net_income / equity * 100) if pd.notna(equity) and equity != 0 else np.nan
+        debt_to_equity = (total_liab / equity) if pd.notna(equity) and equity != 0 else np.nan
+        curr_ratio = curr_assets / curr_liab if pd.notna(curr_liab) and curr_liab != 0 else np.nan
+
+        rev_growth = np.nan
+        if len(inc) > 1:
+            prev_rev = safe_get(inc.iloc[1:2], ["us-gaap:Revenues", "Revenues"])
+            if pd.notna(prev_rev) and prev_rev != 0:
+                rev_growth = ((revenue - prev_rev) / prev_rev * 100)
+
+        metrics = {
+            "roe": roe,
+            "debt_to_equity": debt_to_equity,
+            "current_ratio": curr_ratio,
+            "fcf": fcf,
+            "revenue_growth": rev_growth,
+            "moat_proxy": int(pd.notna(roe) and roe > 15 and pd.notna(debt_to_equity) and debt_to_equity < 0.5),
+            "consistent_earnings": int(pd.notna(net_income) and net_income > 0),
+        }
+    except Exception as e:
+        logger.error("XBRL error for %s: %s", getattr(company, "ticker", "N/A"), e)
+
+    return metrics

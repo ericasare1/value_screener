@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/value_screener/__init__.py
+src/value_screener/cli.py
+src/value_screener/core.py
+src/value_screener/data_sources.py
+src/value_screener/scoring.py
+src/value_screener.egg-info/PKG-INFO
+src/value_screener.egg-info/SOURCES.txt
+src/value_screener.egg-info/dependency_links.txt
+src/value_screener.egg-info/entry_points.txt
+src/value_screener.egg-info/requires.txt
+src/value_screener.egg-info/top_level.txt
+tests/test_core.py
