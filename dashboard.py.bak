@@ -1,0 +1,882 @@
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+import yfinance as yf
+import numpy as np
+import os
+from pathlib import Path
+
+st.set_page_config(layout="wide", page_title="Value Gems Dashboard 🚀")
+
+@st.cache_data(ttl=600)
+def load_csvs():
+    files = ['output/nasdaq_gems.csv', 'output/top_gems.csv', 'output/aame_final.csv', 'output/*.csv']
+    dfs = []
+    for f in files:
+        if '*' in str(f):
+            for file in Path('output').glob('*.csv'):
+                try:
+                    df = pd.read_csv(file)
+                    if 'value_score' in df.columns:
+                        dfs.append(df)
+                except: pass
+        elif os.path.exists(f):
+            df = pd.read_csv(f)
+            if 'value_score' in df.columns:
+                dfs.append(df)
+    if dfs:
+        combined = pd.concat(dfs, ignore_index=True).drop_duplicates('ticker')
+        # Clean numeric
+        for col in ['value_score', 'pe', 'pb', 'roe']:
+            if col in combined.columns:
+                combined[col] = pd.to_numeric(combined[col], errors='coerce')
+        return combined.sort_values('value_score', ascending=False).dropna(subset=['value_score'])
+    return pd.DataFrame({'ticker':[], 'value_score':[]})
+
+def portfolio_value(portfolio):
+    total = 0
+    for ticker, shares in portfolio.items():
+        try:
+            price = yf.Ticker(ticker).info.get('regularMarketPrice') or 0
+            total += shares * price
+        except: pass
+    return total
+
+if 'portfolio' not in st.session_state:
+    st.session_state.portfolio = {}
+
+# === MAIN DASHBOARD ===
+st.title("💎 Value Gems Dashboard")
+st.markdown("**Live scores from SEC + yfinance** (AAME=55.6, AAT=47.2+)")
+
+df = load_csvs()
+st.metric("Total Gems Found", len(df), delta="from scan")
+
+if len(df) > 0:
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("Top Score", f"{df['value_score'].max():.1f}", df['value_score'].max())
+    with col2:
+        gems_50 = len(df[df['value_score'] > 50])
+        st.metric("Score >50", gems_50)
+    with col3:
+        avg_score = df['value_score'].mean()
+        st.metric("Avg Score", f"{avg_score:.1f}")
+
+    # Table + Filter
+    min_score = st.slider("Min Score", 0, 100, 30)
+    filtered = df[df['value_score'] >= min_score].head(50)
+    
+    st.subheader(f"🏆 Top {len(filtered)} Gems (≥{min_score})")
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    st.dataframe(filtered[['ticker', 'value_score']].style.format({'value_score': '{:.1f}'}), 
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+                 use_container_width=True)
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    # Portfolio
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    st.subheader("📈 Portfolio Tracker")
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    col1, col2 = st.columns([3,1])
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    with col1:
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        new_ticker = st.text_input("Add ticker (ex: AAME)")
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    with col2:
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        shares = st.number_input("Shares", min_value=1.0, value=100.0)
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    if st.button("Add to Portfolio") and new_ticker:
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        st.session_state.portfolio[new_ticker.upper()] = shares
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        st.rerun()
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    portfolio_df = pd.DataFrame(list(st.session_state.portfolio.items()), 
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+                               columns=['ticker', 'shares'])
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    if not portfolio_df.empty:
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        st.dataframe(portfolio_df)
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        total_val = portfolio_value(st.session_state.portfolio)
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        st.metric("Portfolio Value", f"${total_val:,.0f}")
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    # Chart - FIXED responsive
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+    if len(filtered) > 1:
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        fig = px.bar(filtered.head(15), x="ticker", y="value_score",
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+                    title="🏆 Top Value Scores",
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+                    color="value_score", color_continuous_scale="viridis",
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+                    height=400)
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        fig.update_layout(margin=dict(l=10, r=10, t=40, b=10),
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+                          font_size=12)
+    # === STOCK PRICES + CHARTS ===
+    st.subheader("📈 Live Stock Prices")
+    selected_tickers = st.multiselect("Select tickers for charts:", filtered["ticker"].head(10).tolist(), default=["AAME"])
+    
+    for ticker in selected_tickers:
+        col1, col2 = st.columns([2,3])
+        with col1:
+            try:
+                stock = yf.Ticker(ticker)
+                price = stock.info.get("regularMarketPrice", "N/A")
+                st.metric(f"**{ticker}**", f"${price:.2f}" if price != "N/A" else "N/A", delta="live")
+            except:
+                st.metric(f"**{ticker}**", "No data")
+        with col2:
+            try:
+                hist = stock.history(period="1mo")
+                if not hist.empty:
+                    fig_price = px.line(hist.reset_index(), x="Date", y="Close", 
+                                      title=f"{ticker} 1-Month Chart")
+                    fig_price.update_layout(height=250, margin=dict(t=30))
+                    st.plotly_chart(fig_price, use_container_width=True)
+                else:
+                    st.write("No chart data")
+            except:
+                st.write("Chart unavailable")
+
+        st.plotly_chart(fig, use_container_width=True, 
+                        config={"displayModeBar": False})
+

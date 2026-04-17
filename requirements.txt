@@ -1,0 +1,6 @@
+edgartools
+pandas
+numpy
+yfinance
+alpha-vantage
+pytest

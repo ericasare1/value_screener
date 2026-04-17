@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "value_screener"
+version = "0.1.0"
+description = "Automated value investing screener for small-cap stocks"
+requires-python = ">=3.10"
+dependencies = [
+  "edgartools",
+  "pandas>=2.0",
+  "numpy",
+  "yfinance",
+  "alpha-vantage",
+]
+
+[project.scripts]
+vscreen = "value_screener.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
