@@ -1,0 +1,11 @@
+ticker,value_score,company_name,mcap_billions
+JPM,41.5,JPMorgan Chase & Co.,836.862214144
+BAC,58.0,Bank of America Corporation,385.225162752
+WFC,29.0,Wells Fargo & Company,250.332069888
+GS,29.0,"The Goldman Sachs Group, Inc.",274.778374144
+MS,29.0,Morgan Stanley,299.819794432
+C,58.0,Citigroup Inc.,231.224983552
+USB,12.5,U.S. Bancorp,88.52615168
+PNC,29.0,"The PNC Financial Services Group, Inc.",90.681810944
+BK,29.0,The Bank of New York Mellon Corporation,92.979470336
+FITB,0.0,Fifth Third Bancorp,45.5991296

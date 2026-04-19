@@ -65,9 +65,14 @@ def yfinance_fallback(ticker):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', '-o', required=True)
+    parser.add_argument("--tickers_file", type=str, help="Custom tickers file (one per line)")
     args = parser.parse_args()
-    
-    tickers = ['TBBK', 'PFG', 'MCY', 'PRA', 'WD', 'ENVX', 'JOBY']
+
+    if args.tickers_file:
+        with open(args.tickers_file, 'r') as f:
+            tickers = [line.strip() for line in f if line.strip()]
+    else:
+        tickers = ['TBBK', 'PFG', 'MCY', 'PRA', 'WD', 'ENVX', 'JOBY']
     logger.info("Hybrid screening %d tickers (SEC + yfinance)", len(tickers))
     
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)

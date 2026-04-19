@@ -1,0 +1,1001 @@
+ticker,value_score,company_name,mcap_billions
+Symbol,0.0,Symbol,0.0
+AACB,12.5,Artius II Acquisition Inc.,0.28698976
+AACBR,12.5,Artius II Acquisition Inc.,0.0
+AACBU,12.5,Artius II Acquisition Inc.,0.26937248
+AACG,46.0,ATA Creativity Global,0.043460296
+AACI,12.5,Armada Acquisition Corp. III,0.252412592
+AACIU,12.5,Armada Acquisition Corp. III,0.0
+AACIW,12.5,Armada Acquisition Corp. III,0.0
+AACO,0.0,Abony Acquisition Corp. I,0.30985328
+AACOU,12.5,Abony Acquisition Corp. I,0.0
+AACOW,0.0,Abony Acquisition Corp. I,0.0
+AACPU,12.5,Apogee Acquisition Corp,0.0
+AADR,0.0,AdvisorShares Dorsey Wright ADR ETF,0.0
+AAEQ,0.0,Alpha Architect US Equity 2 ETF,0.0
+AAL,46.0,American Airlines Group Inc.,8.438692352
+AALG,0.0,Leverage Shares 2X Long AAL Daily ETF,0.0
+AAME,42.0,Atlantic American Corporation,0.05313478
+AAOI,29.0,"Applied Optoelectronics, Inc.",12.382968832
+AAON,41.5,"AAON, Inc.",7.691672576
+AAPB,0.0,GraniteShares 2x Long AAPL Daily ETF,0.0
+AAPD,0.0,Direxion Daily AAPL Bear 1X Shares,0.0
+AAPG,0.0,AAPG,2.622230016
+AAPL,41.5,Apple Inc.,3971.820552192
+AAPU,0.0,Direxion Daily AAPL Bull 2X Shares,0.0
+AARD,25.0,"Aardvark Therapeutics, Inc.",0.114097888
+AAUS,0.0,Alpha Architect US Equity ETF,0.0
+AAVM,0.0,Alpha Architect Global Factor Equity ETF,0.0
+AAXJ,0.0,iShares MSCI All Country Asia ex Japan ETF,0.0
+ABAT,12.5,American Battery Technology Company,0.447811456
+ABCL,25.0,AbCellera Biologics Inc.,1.2156736
+ABCS,0.0,Alpha Blue Capital US Small-Mid Cap Dynamic ETF,0.0
+ABEO,25.0,Abeona Therapeutics Inc.,0.313769632
+ABI,0.0,VictoryShares Pioneer Asset-Based Inc ETF,0.0
+ABIG,0.0,Argent Large Cap ETF,0.0
+ABLV,17.0,Able View Global Inc.,0.03654854
+ABLVW,12.5,Able View Global Inc.,0.0
+ABNB,25.0,"Airbnb, Inc.",84.861206528
+ABNG,0.0,Leverage Shares 2X Long Abnb Daily ETF,0.0
+ABOS,12.5,"Acumen Pharmaceuticals, Inc.",0.203639984
+ABSI,12.5,Absci Corporation,0.547816128
+ABTC,12.5,American Bitcoin Corp,1.376857344
+ABTS,42.0,Abits Group Inc.,0.004838544
+ABUS,12.5,Arbutus Biopharma Corporation,0.929555264
+ABVC,12.5,"ABVC BioPharma, Inc.",0.033841136
+ABVE,29.5,Above Food Ingredients Inc.,0.051191848
+ABVEW,12.5,Above Food Ingredients Inc.,0.0
+ABVX,12.5,ABIVAX Société Anonyme,9.782765568
+ACAA,0.0,Averin Capital Acquisition Corp.,0.342584736
+ACAAU,12.5,Averin Capital Acquisition Corp.,0.0
+ACAAW,12.5,Averin Capital Acquisition Corp.,0.0
+ACAD,54.0,ACADIA Pharmaceuticals Inc.,3.7798656
+ACB,42.0,Aurora Cannabis Inc.,0.216403376
+ACCL,25.0,Acco Group Holdings Limited,0.019808858
+ACDC,29.5,ProFrac Holding Corp.,1.072860032
+ACEP,0.0,ARS Core Equity Portfolio ETF,0.0
+ACET,25.0,"Adicet Bio, Inc.",0.078912
+ACFN,25.0,"Acorn Energy, Inc.",0.045543124
+ACGCU,0.0,ACP Holdings Acquisition Corp,0.0
+ACGL,66.5,Arch Capital Group Ltd.,34.768662528
+ACGLN,66.5,Arch Capital Group Ltd.,0.0
+ACGLO,83.5,Arch Capital Group Ltd.,11.98247936
+ACHC,29.5,"Acadia Healthcare Company, Inc.",2.489718016
+ACHV,0.0,"Achieve Life Sciences, Inc.",0.271523936
+ACIC,54.0,American Coastal Insurance Corporation,0.579495424
+ACIU,12.5,AC Immune SA,0.306338464
+ACIW,12.5,"ACI Worldwide, Inc.",4.584324096
+ACLS,12.5,"Axcelis Technologies, Inc.",3.648569344
+ACLX,12.5,"Arcellx, Inc.",6.7281024
+ACMR,12.5,"ACM Research, Inc.",3.326473472
+ACNB,41.5,ACNB Corporation,0.536894784
+ACNT,29.0,Ascent Industries Co.,0.135134352
+ACOG,0.0,Alpha Cognition Inc. Common Stock,0.151112288
+ACON,12.5,"Aclarion, Inc.",0.007737238
+ACONW,12.5,"Aclarion, Inc.",0.0
+ACRS,12.5,"Aclaris Therapeutics, Inc.",0.5146208
+ACRV,25.0,"Acrivon Therapeutics, Inc.",0.06896512
+ACT,54.0,"Enact Holdings, Inc.",6.069530112
+ACTG,25.0,Acacia Research Corporation,0.48430688
+ACTU,0.0,"Actuate Therapeutics, Inc. Common stock",0.054773972
+ACWI,0.0,iShares MSCI ACWI ETF,0.0
+ACWX,0.0,iShares MSCI ACWI ex U.S. ETF,0.0
+ACXP,12.5,"Acurx Pharmaceuticals, Inc.",0.00679496
+ADAC,12.5,American Drive Acquisition Company,0.28491248
+ADACU,12.5,American Drive Acquisition Company,0.0
+ADACW,12.5,American Drive Acquisition Company,0.0
+ADAG,12.5,Adagene Inc.,0.262308208
+ADAM,12.5,"Adamas Trust, Inc.",0.712937856
+ADAMG,0.0,"Adamas Trust, Inc.",0.0
+ADAMH,0.0,"Adamas Trust, Inc.",0.0
+ADAMI,0.0,"New York Mortgage Trust, Inc. 9.125% Senior Notes Due 2029",0.0
+ADAML,0.0,"Adamas Trust, Inc.",0.0
+ADAMM,0.0,ADAMM,0.0
+ADAMN,0.0,"Adamas Trust, Inc.",0.0
+ADAMO,0.0,"Adamas Trust, Inc. 9.250% Senior Notes Due 2031",0.0
+ADAMZ,0.0,"Adamas Trust, Inc.",0.0
+ADBE,41.5,Adobe Inc.,99.646849024
+ADBG,0.0,Leverage Shares 2X Long ADBE Daily ETF,0.0
+ADEA,41.5,Adeia Inc.,3.202658816
+ADGM,0.0,"Adagio Medical Holdings, Inc.",0.034426212
+ADI,58.0,"Analog Devices, Inc.",181.3434368
+ADIL,12.5,"Adial Pharmaceuticals, Inc.",0.002327591
+ADMA,12.5,"ADMA Biologics, Inc.",2.62213248
+ADP,25.0,"Automatic Data Processing, Inc.",81.079836672
+ADPT,0.0,Adaptive Biotechnologies Corporation,2.228113408
+ADSE,12.5,ADS-TEC Energy PLC,0.697728
+ADSEW,12.5,ADS-TEC Energy PLC,0.0
+ADSK,29.0,"Autodesk, Inc.",51.308240896
+ADTN,29.5,"ADTRAN Holdings, Inc.",1.368641536
+ADTX,12.5,"Aditxt, Inc.",0.00039281
+ADUR,12.5,Aduro Clean Technologies Inc.,0.379885376
+ADUS,75.0,Addus HomeCare Corporation,1.758465792
+ADV,29.5,Advantage Solutions Inc.,0.402048448
+ADVB,37.5,Advanced Biomed Inc.,0.006549773
+ADXN,12.5,Addex Therapeutics Ltd,0.008279026
+AEAQ,12.5,Activate Energy Acquisition Corp.,0.311237952
+AEAQU,12.5,Activate Energy Acquisition Corp.,0.0
+AEAQW,12.5,Activate Energy Acquisition Corp.,0.00354675
+AEBI,29.5,Aebi Schmidt Holding AG,0.917605056
+AEC,12.5,Anfield Energy Inc.,0.110240192
+AEHL,58.5,Antelope Enterprise Holdings Limited,0.002028458
+AEHR,29.0,"Aehr Test Systems, Inc.",2.637669888
+AEI,25.0,Alset Inc.,0.068456664
+AEIS,12.5,"Advanced Energy Industries, Inc.",14.283170816
+AEMD,25.0,"Aethlon Medical, Inc.",0.003671717
+AENT,58.5,Alliance Entertainment Holding Corporation,0.362816448
+AENTW,54.0,Alliance Entertainment Holding Corporation,0.0
+AEP,0.0,"American Electric Power Company, Inc.",72.652693504
+AERT,29.5,"Aeries Technology, Inc",0.028800292
+AERTW,12.5,"Aeries Technology, Inc",0.0
+AEVA,0.0,"Aeva Technologies, Inc.",0.990167104
+AEYE,0.0,"AudioEye, Inc.",0.088846416
+AFBI,0.0,"Affinity Bancshares, Inc.",0.136464496
+AFCG,12.5,Advanced Flower Capital Inc.,0.065410184
+AFJK,12.5,"Aimei Health Technology Co., Ltd",0.277375744
+AFJKR,12.5,AFJKR,0.0
+AFJKU,12.5,"Aimei Health Technology Co., Ltd",0.0
+AFOS,0.0,ARS Focused Opportunities Strategy ETF,0.0
+AFRI,29.5,Forafric Global PLC,0.260407424
+AFRIW,12.5,Forafric Global PLC,0.0
+AFRM,45.5,"Affirm Holdings, Inc.",21.485637632
+AFSC,0.0,abrdn Focused U.S. Small Cap Active ETF,0.0
+AFYA,71.0,Afya Limited,1.425301376
+AGAE,12.5,Allied Gaming & Entertainment Inc.,0.026229958
+AGCC,12.5,Agencia Comercial Spirits Ltd,0.375069568
+AGEM,0.0,abrdn Emerging Markets Dividend Active ETF,0.0
+AGEN,12.5,Agenus Inc.,0.183928112
+AGGA,0.0,Astoria Dynamic Core US Fixed Income ETF,0.0
+AGH,12.5,Aureus Greenway Holdings Inc.,0.066435364
+AGIO,12.5,"Agios Pharmaceuticals, Inc.",2.058928896
+AGIX,0.0,KraneShares Artificial Intelligence and Technology ETF,0.0
+AGMB,25.0,AgomAb Therapeutics NV,0.557659712
+AGMH,54.5,AGM Group Holdings Inc.,0.00200007
+AGMI,0.0,Themes Silver Miners ETF,0.0
+AGNC,54.0,AGNC Investment Corp.,12.24330752
+AGNCL,41.5,AGNCL,0.0
+AGNCM,41.5,AGNC Investment Corp.,8.748732416
+AGNCN,41.5,AGNC Investment Corp.,8.74082816
+AGNCO,41.5,AGNC Investment Corp.,0.0
+AGNCP,41.5,AGNC Investment Corp.,0.0
+AGNCZ,41.5,AGNC Investment Corp.,0.0
+AGNG,0.0,Global X Aging Population ETF,0.0
+AGPU,25.0,Axe Compute Inc.,0.01949822
+AGRZ,29.5,Agroz Inc.,0.008019189
+AGYS,41.5,"Agilysys, Inc.",1.917825792
+AGZD,0.0,WisdomTree Interest Rate Hedged U.S. Aggregate Bond Fund,0.0
+AHCO,29.5,AdaptHealth Corp.,1.7206816
+AHG,12.5,Akso Health Group,1.713408384
+AHMA,54.0,Ambitions Enterprise Management Co. L.L.C,0.037750748
+AIA,0.0,iShares Asia 50 ETF,0.0
+AIDX,12.5,"20/20 Biolabs, Inc.",0.018654558
+AIFD,0.0,TCW Artificial Intelligence ETF,0.0
+AIFF,0.0,"Firefly Neuroscience, Inc.",0.027656786
+AIFU,42.0,AIFU Inc.,0.157167408
+AIHS,12.5,Senmiao Technology Limited,0.006517209
+AIIO,12.5,Robo.ai Inc.,0.013423562
+AIIOW,12.5,Robo.ai Inc.,0.0
+AIMD,16.5,"Ainos, Inc.",0.014314044
+AIMDW,12.5,"Ainos, Inc.",0.0
+AIMS,0.0,Acuitas Small Cap Active ETF,0.0
+AIOS,29.5,AIOS Tech Inc.,0.002831511
+AIOT,46.0,"PowerFleet, Inc.",0.460125184
+AIP,12.5,"Arteris, Inc.",1.0061904
+AIPI,0.0,REX AI Equity Premium Income ETF,0.0
+AIPO,0.0,Defiance AI & Power Infrastructure ETF,0.0
+AIQ,0.0,Global X Artificial Intelligence & Technology ETF,0.0
+AIRE,12.5,reAlpha Tech Corp.,0.03894924
+AIRG,12.5,"Airgain, Inc.",0.079822016
+AIRJ,25.0,AirJoule Technologies Corporation,0.225960032
+AIRJW,25.0,AirJoule Technologies Corporation,0.0
+AIRO,25.0,"AIRO Group Holdings, Inc.",0.253680176
+AIRR,0.0,First Trust RBA American Industrial RenaissanceTM ETF,0.0
+AIRS,17.0,"AirSculpt Technologies, Inc.",0.180596944
+AIRT,29.5,"Air T, Inc.",0.060133716
+AIRTP,12.5,"Air T, Inc.",0.451670624
+AISP,12.5,"Airship AI Holdings, Inc.",0.08489924
+AISPW,12.5,"Airship AI Holdings, Inc.",0.0
+AIXC,25.0,"AIxCrypto Holdings, Inc.",0.030582636
+AIXI,29.5,Xiao-I Corporation,0.011620691
+AKAM,0.0,"Akamai Technologies, Inc.",14.11721728
+AKAN,25.0,Akanda Corp.,0.001891843
+AKBA,0.0,"Akebia Therapeutics, Inc.",0.376370304
+AKTS,25.0,"Aktis Oncology, Inc.",1.119339008
+AKTX,25.0,"Akari Therapeutics, Plc",0.00663861
+ALAB,54.0,"Astera Labs, Inc.",29.625833472
+ALAR,29.5,Alarum Technologies Ltd.,0.052291168
+ALBG,0.0,Leverage Shares 2X Long ALB Daily ETF,0.0
+ALBT,25.0,Avalon GloboCare Corp.,0.0037373
+ALCO,0.0,"Alico, Inc.",0.330613984
+ALCY,12.5,Alchemy Investments Acquisition Corp 1,0.049991564
+ALCYU,12.5,Alchemy Investments Acquisition Corp 1,0.0
+ALCYW,12.5,Alchemy Investments Acquisition Corp 1,0.0
+ALDF,12.5,Aldel Financial II Inc.,0.316005728
+ALDFU,12.5,Aldel Financial II Inc.,0.0
+ALDFW,12.5,Aldel Financial II Inc.,0.0
+ALDX,12.5,"Aldeyra Therapeutics, Inc.",0.108329008
+ALEC,0.0,"Alector, Inc.",0.28363184
+ALF,12.5,Centurion Acquisition Corp.,0.388484384
+ALFUU,12.5,Centurion Acquisition Corp.,0.0
+ALFUW,12.5,Centurion Acquisition Corp.,0.0
+ALGM,12.5,"Allegro MicroSystems, Inc.",7.411634688
+ALGN,41.5,"Align Technology, Inc.",13.612295168
+ALGS,25.0,"Aligos Therapeutics, Inc.",0.041334548
+ALGT,33.5,Allegiant Travel Company,1.69373632
+ALHC,17.0,"Alignment Healthcare, Inc.",4.335171584
+ALIL,0.0,Argent Focused Small Cap ETF,0.0
+ALIS,12.5,Calisa Acquisition Corp,0.084612096
+ALISR,12.5,Calisa Acquisition Corp,0.0
+ALISU,12.5,Calisa Acquisition Corp,0.0
+ALKS,12.5,Alkermes plc,5.754422272
+ALKT,0.0,"Alkami Technology, Inc.",1.90811264
+ALLO,12.5,"Allogene Therapeutics, Inc.",0.79175424
+ALLR,12.5,"Allarity Therapeutics, Inc.",0.019457346
+ALLT,58.0,Allot Ltd.,0.35469248
+ALLW,0.0,State Street Bridgewater All Weather ETF,0.0
+ALM,12.5,Almonty Industries Inc.,6.602993664
+ALMR,12.5,"Alamar Biosciences, Inc. Common Stock",1.427597568
+ALMS,12.5,Alumis Inc.,3.178711296
+ALMU,12.5,"Aeluma, Inc.",0.290954816
+ALNT,29.0,Allient Inc.,1.266146432
+ALNY,29.0,"Alnylam Pharmaceuticals, Inc.",41.317285888
+ALOT,29.5,"AstroNova, Inc.",0.102699416
+ALOV,12.5,"Aldabra 4 Liquidity Opportunity Vehicle, Inc.",0.37068528
+ALOVU,12.5,"Aldabra 4 Liquidity Opportunity Vehicle, Inc.",0.0
+ALOVW,12.5,"Aldabra 4 Liquidity Opportunity Vehicle, Inc.",0.0
+ALOY,12.5,REalloys Inc.,0.680275072
+ALPS,0.0,Alps Group Inc,0.16606752
+ALRM,41.5,"Alarm.com Holdings, Inc.",2.319903744
+ALRS,12.5,Alerus Financial Corporation,0.654853184
+ALT,12.5,"Altimmune, Inc.",0.455368128
+ALTI,12.5,"AlTi Global, Inc.",0.566531072
+ALTO,46.0,"Alto Ingredients, Inc.",0.38207632
+ALTS,41.5,ALT5 Sigma Corporation,0.124610216
+ALTY,0.0,Global X Alternative Income ETF,0.0
+ALVO,12.5,Alvotech,1.126494336
+ALVOW,12.5,Alvotech,0.0
+ALXO,0.0,ALX Oncology Holdings Inc.,0.219785824
+ALZN,0.0,"Alzamend Neuro, Inc.",0.00426131
+AMAL,12.5,Amalgamated Financial Corp.,1.298486272
+AMAT,54.0,"Applied Materials, Inc.",315.01549568
+AMBA,12.5,"Ambarella, Inc.",2.54982656
+AMBR,12.5,Amber International Holding Limited,0.223902208
+AMCI,0.0,AMC Robotics Corporation,0.14845168
+AMCX,46.0,AMC Global Media Inc.,0.38172976
+AMD,58.0,"Advanced Micro Devices, Inc.",453.890113536
+AMDD,0.0,Direxion Daily AMD Bear 1X Shares,0.0
+AMDG,0.0,Leverage Shares 2X Long AMD Daily ETF,0.0
+AMDL,0.0,GraniteShares 2x Long AMD Daily ETF,0.0
+AMGN,41.5,Amgen Inc.,191.530729472
+AMID,0.0,Argent Mid Cap ETF,0.0
+AMIX,12.5,"Autonomix Medical, Inc.",0.004629912
+AMKR,58.0,"Amkor Technology, Inc.",16.695043072
+AMLX,12.5,"Amylyx Pharmaceuticals, Inc.",2.029458304
+AMOD,12.5,"Alpha Modus Holdings, Inc.",0.019178518
+AMODW,12.5,"Alpha Modus Holdings, Inc.",0.0
+AMPG,25.0,"AmpliTech Group, Inc.",0.051675852
+AMPGR,25.0,"AmpliTech Group, Inc.",0.0
+AMPGZ,25.0,"AmpliTech Group, Inc.",0.0
+AMPH,29.5,"Amphastar Pharmaceuticals, Inc.",1.038069504
+AMPL,12.5,"Amplitude, Inc.",0.933412288
+AMRN,58.5,Amarin Corporation plc,0.314174496
+AMRX,29.5,"Amneal Pharmaceuticals, Inc.",4.43727616
+AMSC,70.5,American Superconductor Corporation,1.891159936
+AMSF,25.0,"AMERISAFE, Inc.",0.643429632
+AMST,0.0,Amesite Inc.,0.008047975
+AMTX,29.5,"Aemetis, Inc.",0.15469048
+AMUN,0.0,abrdn Ultra Short Municipal Income Active ETF,0.0
+AMUU,0.0,Direxion Daily AMD Bull 2X Shares,0.0
+AMWD,29.5,American Woodmark Corporation,0.630134976
+AMYY,0.0,Graniteshares YieldBOOST AMD ETF,0.0
+AMZD,0.0,Direxion Daily AMZN Bear 1X Shares,0.0
+AMZN,25.0,"Amazon.com, Inc.",2694.585253888
+AMZU,0.0,Direxion Daily AMZN Bull 2X Shares,0.0
+AMZZ,0.0,GraniteShares 2x Long AMZN Daily ETF,0.0
+ANAB,0.0,"AnaptysBio, Inc.",1.94079488
+ANABV,0.0,"AnaptysBio, Inc.",0.0
+ANDE,62.5,"The Andersons, Inc.",2.455594752
+ANEL,0.0,Defiance Daily Target 2X Long ANET ETF,0.0
+ANGH,29.5,Anghami Inc.,0.035624996
+ANGHW,12.5,Anghami Inc.,0.0
+ANGI,29.5,Angi Inc.,0.319314272
+ANGL,0.0,VanEck Fallen Angel High Yield Bond ETF,0.0
+ANGO,29.5,"AngioDynamics, Inc.",0.448723424
+ANIK,12.5,"Anika Therapeutics, Inc.",0.23073952
+ANIP,12.5,"ANI Pharmaceuticals, Inc.",1.84094592
+ANIX,29.0,"Anixa Biosciences, Inc.",0.097566072
+ANL,12.5,Adlai Nortye Ltd.,0.849765888
+ANNA,12.5,"AleAnna, Inc.",0.148001968
+ANNAW,25.0,"AleAnna, Inc.",0.0
+ANNX,12.5,"Annexon, Inc.",1.049502144
+ANPA,0.0,Rich Sparkle Holdings Limited,0.126703728
+ANSC,41.5,Agriculture & Natural Solutions Acquisition Corporation,0.469068288
+ANSCU,41.5,Agriculture & Natural Solutions Acquisition Corporation,0.0
+ANSCW,41.5,Agriculture & Natural Solutions Acquisition Corporation,0.0
+ANTA,54.0,ANTA,0.2231304
+ANTX,0.0,"AN2 Therapeutics, Inc.",0.129777016
+ANV,0.0,Graniteshares Autocallable Nvda ETF,0.0
+ANY,29.5,Sphere 3D Corp.,0.005782167
+AOHY,0.0,Angel Oak High Yield Opportunities ETF,0.0
+AOSL,42.0,Alpha and Omega Semiconductor Limited,1.008296768
+AOTG,0.0,AOT Growth and Innovation ETF,0.0
+AOUT,42.0,"American Outdoor Brands, Inc.",0.121297168
+APA,46.0,APA Corporation,12.630531072
+APAC,12.5,StoneBridge Acquisition II Corporation,0.080950176
+APACR,12.5,StoneBridge Acquisition II Corporation,0.0
+APACU,12.5,StoneBridge Acquisition II Corporation,0.0
+APAD,12.5,A Paradise Acquisition Corp.,0.280301344
+APADR,12.5,A Paradise Acquisition Corp.,0.0
+APADU,12.5,A Paradise Acquisition Corp.,0.0
+APC,29.5,ARKO Petroleum Corp.,1.497823872
+APEI,0.0,"American Public Education, Inc.",1.115715968
+APGE,12.5,"Apogee Therapeutics, Inc.",6.877903872
+API,54.0,"Agora, Inc.",0.3593
+APLD,0.0,Applied Digital Corporation,9.010313216
+APLM,12.5,"Apollomics, Inc.",0.029844758
+APLMW,12.5,"Apollomics, Inc.",0.038469816
+APLS,0.0,"Apellis Pharmaceuticals, Inc.",5.228722688
+APM,25.0,Aptorum Group Limited,0.007211297
+APOG,17.0,"Apogee Enterprises, Inc.",0.776974848
+APP,41.5,AppLovin Corporation,161.27213568
+APPF,25.0,"AppFolio, Inc.",5.631344128
+APPN,12.5,Appian Corporation,1.594572032
+APPS,33.5,"Digital Turbine, Inc.",0.449624768
+APPX,0.0,Tradr 2X Long APP Daily ETF,0.0
+APRE,12.5,"Aprea Therapeutics, Inc.",0.011452453
+APVO,25.0,Aptevo Therapeutics Inc.,0.006239513
+APWC,58.5,Asia Pacific Wire & Cable Corporation Limited,0.05607614
+APXT,12.5,Apex Treasury Corporation,0.459140384
+APXTU,12.5,Apex Treasury Corporation,0.0
+APXTW,12.5,Apex Treasury Corporation,0.0
+APYX,16.5,Apyx Medical Corporation,0.16648032
+AQB,12.5,"AquaBounty Technologies, Inc.",0.00504529
+AQMS,41.5,"Aqua Metals, Inc.",0.014742658
+AQST,12.5,"Aquestive Therapeutics, Inc.",0.527234624
+AQWA,0.0,Global X Clean Water ETF,0.0
+ARAI,0.0,ARAI,0.0
+ARAY,29.5,Accuray Incorporated,0.052466288
+ARBB,42.0,ARB IOT Group Limited,0.007272854
+ARBE,0.0,Arbe Robotics Ltd.,0.102449336
+ARBEW,12.5,Arbe Robotics Ltd.,0.0
+ARBK,29.5,Argo Blockchain plc,0.000984232
+ARCB,46.0,ArcBest Corporation,2.670707456
+ARCC,12.5,Ares Capital Corporation,13.707056128
+ARCI,12.5,Archimedes Tech SPAC Partners III Co.,0.348564864
+ARCIU,12.5,Archimedes Tech SPAC Partners III Co.,0.0
+ARCIW,12.5,Archimedes Tech SPAC Partners III Co.,0.0
+ARCT,25.0,Arcturus Therapeutics Holdings Inc.,0.25154416
+ARDX,0.0,"Ardelyx, Inc.",1.581845888
+AREB,12.5,"American Rebel Holdings, Inc.",0.022297762
+AREBW,12.5,"American Rebel Holdings, Inc.",0.0
+AREC,12.5,American Resources Corporation,0.241117728
+ARGX,25.0,argenx SE,53.060726784
+ARHS,29.5,"Arhaus, Inc.",1.105907072
+ARKO,17.0,Arko Corp.,0.749929152
+ARKR,46.0,Ark Restaurants Corp.,0.025351292
+ARLP,87.5,"Alliance Resource Partners, L.P.",3.213896704
+ARM,12.5,Arm Holdings plc,177.067016192
+ARMG,0.0,Leverage Shares 2X Long ARM Daily ETF,0.0
+ARMY,0.0,Tema International Defense Innovation ETF,0.0
+AROW,41.5,Arrow Financial Corporation,0.617040064
+ARQ,42.0,"Arq, Inc.",0.095553832
+ARQQ,12.5,Arqit Quantum Inc.,0.250899312
+ARQQW,25.0,Arqit Quantum Inc.,0.0
+ARQT,0.0,"Arcutis Biotherapeutics, Inc.",3.042539008
+ARRY,46.0,"Array Technologies, Inc.",1.19833664
+ARTC,12.5,Art Technology Acquisition Corp.,0.29961616
+ARTCU,12.5,Art Technology Acquisition Corp.,0.0
+ARTCW,12.5,Art Technology Acquisition Corp.,0.0
+ARTL,12.5,"Artelo Biosciences, Inc.",0.00416531
+ARTNA,12.5,Artesian Resources Corporation,0.333891424
+ARTV,12.5,"Artiva Biotherapeutics, Inc.",0.31019424
+ARTW,42.0,"Art's-Way Manufacturing Co., Inc.",0.01482648
+ARVN,12.5,"Arvinas, Inc.",0.706467264
+ARVR,0.0,First Trust Indxx Metaverse ETF,0.0
+ARWR,12.5,"Arrowhead Pharmaceuticals, Inc.",9.733638144
+ARXS,0.0,"Arxis, Inc. Class A Common Stock",15.259531264
+ASBP,12.5,"Aspire Biopharma Holdings, Inc.",0.001355006
+ASBPW,12.5,"Aspire Biopharma Holdings, Inc.",0.0
+ASCI,0.0,abrdn International Small Cap Active ETF,0.0
+ASLE,71.0,AerSale Corporation,0.327856832
+ASMB,12.5,"Assembly Biosciences, Inc.",0.463825504
+ASMG,0.0,Leverage Shares 2X Long ASML Daily ETF,0.0
+ASML,54.0,ASML Holding N.V.,573.203152896
+ASMU,0.0,Direxion Daily ASML Bull 2X ETF,0.0
+ASND,12.5,Ascendis Pharma A/S,15.009398784
+ASO,46.0,"Academy Sports and Outdoors, Inc.",3.909524736
+ASPC,0.0,A SPAC III Acquisition Corp.,0.025736778
+ASPCR,12.5,A SPAC III Acquisition Corp.,0.0
+ASPCU,0.0,A SPAC III Acquisition Corp.,0.0
+ASPI,0.0,ASP Isotopes Inc.,0.676101504
+ASPS,46.0,Altisource Portfolio Solutions S.A.,0.07895264
+ASPSW,12.5,Altisource Portfolio Solutions S.A.,0.0
+ASPSZ,12.5,Altisource Portfolio Solutions S.A.,0.0
+ASRT,58.5,"Assertio Holdings, Inc.",0.116257448
+ASRV,75.0,"AmeriServ Financial, Inc.",0.066839216
+ASST,25.0,"Strive Asset Management, LLC",1.088310912
+ASTC,25.0,Astrotech Corporation,0.005013018
+ASTE,17.0,"Astec Industries, Inc.",1.363492736
+ASTH,17.0,"Astrana Health, Inc.",1.754976256
+ASTI,29.0,ASTI,0.0
+ASTL,29.5,Algoma Steel Group Inc.,0.50043984
+ASTLW,12.5,Algoma Steel Group Inc.,0.0
+ASTS,0.0,"AST SpaceMobile, Inc.",32.67480576
+ASUR,41.5,"Asure Software, Inc.",0.262017344
+ASYS,29.0,"Amtech Systems, Inc.",0.233529104
+ATAI,12.5,AtaiBeckley Inc.,1.4699264
+ATAT,71.0,Atour Lifestyle Holdings Limited,5.220665344
+ATCX,0.0,Atlas Critical Minerals Corporation,0.02633654
+ATEC,16.5,"Alphatec Holdings, Inc.",1.680058624
+ATER,42.0,"Aterian, Inc.",0.00769897
+ATEX,25.0,Anterix Inc.,0.790340544
+ATGL,12.5,Alpha Technology Group Limited,0.2634
+ATHE,12.5,Alterity Therapeutics Limited,0.084523408
+ATHR,12.5,"Aether Holdings, Inc.",0.03886192
+ATII,12.5,Archimedes Tech SPAC Partners II Co.,0.308919584
+ATIIU,12.5,Archimedes Tech SPAC Partners II Co.,0.27130544
+ATIIW,12.5,Archimedes Tech SPAC Partners II Co.,0.0
+ATLC,58.0,Atlanticus Holdings Corporation,1.058681792
+ATLCL,0.0,Atlanticus Holdings Corporation 6.125% Senior Notes due 2026,0.0
+ATLCP,54.0,Atlanticus Holdings Corporation,0.0
+ATLCZ,0.0,Atlanticus Holdings Corporation 9.25% Senior Notes due 2029,0.0
+ATLN,29.5,Atlantic International Corp.,0.162684448
+ATLO,41.5,Ames National Corporation,0.254849536
+ATLX,12.5,Atlas Lithium Corporation,0.136062784
+ATNI,29.5,"ATN International, Inc.",0.433827648
+ATOM,12.5,Atomera Incorporated,0.207167872
+ATON,12.5,AlphaTON Capital Corp.,0.007499068
+ATOS,12.5,"Atossa Therapeutics, Inc.",0.050204632
+ATPC,25.0,Agape ATP Corporation,0.002491558
+ATRA,29.5,"Atara Biotherapeutics, Inc.",0.04309866
+ATRC,12.5,"AtriCure, Inc.",1.504866432
+ATRO,0.0,Astronics Corporation,2.747149824
+ATXG,42.0,Addentax Group Corp.,0.004748626
+ATYR,25.0,"aTyr Pharma, Inc.",0.083676904
+AUBN,12.5,"Auburn National Bancorporation, Inc.",0.083236568
+AUDC,42.0,AudioCodes Ltd.,0.259129856
+AUGO,0.0,Aura Minerals Inc.,9.144756224
+AUID,0.0,authID Inc.,0.018713684
+AUMI,0.0,Themes Gold Miners ETF,0.0
+AUPH,54.0,Aurinia Pharmaceuticals Inc.,2.134184064
+AUR,12.5,"Aurora Innovation, Inc.",10.330087424
+AURA,12.5,"Aura Biosciences, Inc.",0.467656896
+AURE,25.0,Aurelion Inc.,0.085494496
+AUROW,25.0,"Aurora Innovation, Inc.",0.0
+AUTL,12.5,Autolus Therapeutics plc,0.425829248
+AUUD,25.0,Auddia Inc.,0.002304029
+AVAH,58.5,Aveanna Healthcare Holdings Inc.,1.472542976
+AVAV,12.5,"AeroVironment, Inc.",9.686822912
+AVBH,12.5,"Avidbank Holdings, Inc.",0.328245024
+AVBP,12.5,"ArriVent BioPharma, Inc.",1.310136064
+AVGB,0.0,Avantis Credit ETF,0.0
+AVGG,0.0,Leverage Shares 2X Long AVGO Daily ETF,0.0
+AVGO,58.0,Broadcom Inc.,1927.517437952
+AVGU,0.0,GraniteShares 2x Long AVGO Daily ETF,0.0
+AVGX,0.0,Defiance Daily Target 2X Long AVGO ETF,0.0
+AVIR,12.5,"Atea Pharmaceuticals, Inc.",0.457317728
+AVL,0.0,Direxion Daily AVGO Bull 2X Shares,0.0
+AVNW,71.0,"Aviat Networks, Inc.",0.294172672
+AVO,29.5,"Mission Produce, Inc.",1.012394624
+AVOS,0.0,Avos Global Equities ETF,0.0
+AVPT,12.5,"AvePoint, Inc.",2.168225536
+AVR,12.5,Anteris Technologies Global Corp.,0.590198592
+AVS,0.0,Direxion Daily AVGO Bear 1X Shares,0.0
+AVT,29.5,"Avnet, Inc.",6.045580288
+AVTX,12.5,"Avalo Therapeutics, Inc.",0.328837376
+AVUQ,0.0,Avantis U.S. Quality ETF,0.0
+AVX,25.0,Avax One Technology Ltd.,0.057545424
+AVXC,0.0,Avantis Emerging Markets Ex-China Equity ETF,0.0
+AVXL,0.0,Anavex Life Sciences Corp.,0.337325216
+AVXX,0.0,Defiance Daily Target 2X Long AVAV ETF,0.0
+AWRE,25.0,"Aware, Inc.",0.029810418
+AXG,12.5,Solowin Holdings,0.663227904
+AXGN,0.0,"Axogen, Inc.",1.998060672
+AXIN,12.5,Axiom Intelligence Acquisition Corp 1,0.34577392
+AXINR,12.5,Axiom Intelligence Acquisition Corp 1,0.0
+AXINU,12.5,Axiom Intelligence Acquisition Corp 1,0.0
+AXON,0.0,"Axon Enterprise, Inc.",32.458510336
+AXPG,0.0,Leverage Shares 2X Long AXP Daily ETF,0.0
+AXSM,0.0,"Axsome Therapeutics, Inc.",9.667460096
+AXTI,12.5,"AXT, Inc.",4.588569088
+AYTU,17.0,"Aytu BioPharma, Inc.",0.02790634
+AZ,12.5,A2Z Cust2Mate Solutions Corp.,0.369723584
+AZI,29.5,Autozi Internet Technology (Global) Ltd.,0.008106748
+AZTA,41.5,"Azenta, Inc.",1.153380736
+AZYY,0.0,Graniteshares YieldBOOST AMZN ETF,0.0
+BABU,0.0,Direxion Daily BABA Bull 2X ETF,0.0
+BABX,0.0,GraniteShares 2x Long BABA Daily ETF,0.0
+BACC,12.5,Blue Acquisition Corp.,0.286612192
+BACCR,12.5,Blue Acquisition Corp.,0.0
+BACCU,12.5,Blue Acquisition Corp.,0.0
+BAER,29.5,"Bridger Aerospace Group Holdings, Inc.",0.123590536
+BAERW,12.5,BAERW,0.0
+BAFE,0.0,Brown Advisory Flexible Equity ETF,0.0
+BAFN,29.5,BayFirst Financial Corp.,0.032140232
+BAIG,0.0,Leverage Shares 2X Long BBAI Daily ETF,0.0
+BAIV,0.0,Brown Advisory International Value Select ETF,0.0
+BALQ,0.0,iShares Nasdaq Premium Income Active ETF,0.0
+BAND,17.0,Bandwidth Inc.,0.736657856
+BANF,12.5,BancFirst Corporation,3.918988032
+BANFP,0.0,BFC Capital Trust II PFD TR 7.20%,0.0
+BANL,42.0,CBL International Limited,0.01202229
+BANR,25.0,Banner Corporation,2.202039552
+BANX,25.0,ArrowMark Financial Corp.,0.15370792
+BAOS,12.5,Baosheng Media Group Holdings Limited,0.00412777
+BASG,0.0,Brown Advisory Sustainable Growth ETF,0.0
+BASV,0.0,Brown Advisory Sustainable Value ETF,0.0
+BATRA,0.0,"Atlanta Braves Holdings, Inc.",3.387946496
+BATRK,0.0,"Atlanta Braves Holdings, Inc.",3.11675904
+BAYA,12.5,Bayview Acquisition Corp,0.032722588
+BAYAR,12.5,Bayview Acquisition Corp,0.0
+BAYAU,12.5,Bayview Acquisition Corp,0.0
+BBB,0.0,CYBER HORNET S&P 500 and Bitcoin 75/25 Strategy ETF,0.0
+BBCP,29.5,"Concrete Pumping Holdings, Inc.",0.38324
+BBCQ,12.5,Bleichroeder Acquisition Corp. II,0.39291664
+BBCQU,12.5,Bleichroeder Acquisition Corp. II,0.0
+BBCQW,12.5,Bleichroeder Acquisition Corp. II,0.0
+BBGI,46.0,"Beasley Broadcast Group, Inc.",0.038853664
+BBH,0.0,VanEck Biotech ETF,0.0
+BBIO,12.5,"BridgeBio Pharma, Inc.",14.878974976
+BBLG,12.5,Bone Biologics Corporation,0.002495411
+BBLGW,0.0,Bone Biologics Corporation,0.0
+BBNX,12.5,"Beta Bionics, Inc.",0.578410816
+BBOT,12.5,"BridgeBio Oncology Therapeutics, Inc.",0.748306944
+BBSI,42.0,"Barrett Business Services, Inc.",0.765151296
+BBYY,0.0,GraniteShares YieldBOOST BABA ETF,0.0
+BCAB,12.5,"BioAtla, Inc.",0.007605295
+BCAL,12.5,California BanCorp,0.607745088
+BCAR,0.0,D. Boral ARC Acquisition I Corp.,0.425184
+BCARU,0.0,D. Boral ARC Acquisition I Corp.,0.0
+BCARW,0.0,D. Boral ARC Acquisition I Corp.,0.0
+BCAX,12.5,Bicara Therapeutics Inc.,1.571867136
+BCBP,12.5,"BCB Bancorp, Inc.",0.162653184
+BCDA,0.0,"BioCardia, Inc.",0.012909638
+BCFN,0.0,Baron Financials ETF,0.0
+BCG,17.0,"Binah Capital Group, Inc.",0.03276336
+BCGWW,0.0,"Binah Capital Group, Inc.",0.0
+BCIC,29.0,BCP Investment Corp.,0.106219768
+BCLO,0.0,iShares BBB-B CLO Active ETF,0.0
+BCML,41.5,BayCom Corp,0.31811568
+BCPC,41.5,Balchem Corporation,5.753742848
+BCRX,12.5,"BioCryst Pharmaceuticals, Inc.",2.382605824
+BCTK,0.0,Baron Technology ETF,0.0
+BCTX,12.5,BriaCell Therapeutics Corp.,0.032119656
+BCTXL,12.5,BriaCell Therapeutics Corp.,0.0
+BCTXZ,12.5,BriaCell Therapeutics Corp.,0.0
+BCYC,12.5,BCYC,0.0
+BDCI,12.5,BTC Development Corp.,0.347466688
+BDCIU,12.5,BTC Development Corp.,0.0
+BDCIW,12.5,BTC Development Corp.,0.0
+BDGS,0.0,Bridges Capital Tactical ETF,0.0
+BDMD,12.5,Baird Medical Investment Holdings Limited,0.064637584
+BDMDW,12.5,Baird Medical Investment Holdings Limited,0.0
+BDRX,25.0,Biodexa Pharmaceuticals Plc,0.002256132
+BDSX,12.5,"Biodesix, Inc.",0.132808864
+BDTX,25.0,"Black Diamond Therapeutics, Inc.",0.175303584
+BDVL,0.0,iShares Disciplined Volatility Equity Active ETF,0.0
+BDYN,0.0,iShares Dynamic Equity Active ETF,0.0
+BEAG,12.5,Bold Eagle Acquisition Corp.,0.329778528
+BEAGR,12.5,Bold Eagle Acquisition Corp.,0.0
+BEAGU,12.5,Bold Eagle Acquisition Corp.,0.0
+BEAM,12.5,Beam Therapeutics Inc.,3.197267456
+BEAT,0.0,"HeartBeam, Inc.",0.049341292
+BEATW,0.0,"HeartBeam, Inc.",0.0
+BEDY,0.0,Bny Mellon Enhanced Dividend Income ETF,0.0
+BEEM,42.0,Beam Global,0.032128216
+BEEP,12.5,Mobile Infrastructure Corporation,0.087561
+BEEX,0.0,The BeeHive ETF,0.0
+BEEZ,0.0,Honeytree U.S. Equity ETF,0.0
+BEG,0.0,Leverage Shares 2X Long BE Daily ETF,0.0
+BELFA,25.0,Bel Fuse Inc.,3.213444352
+BELFB,25.0,Bel Fuse Inc.,3.243971584
+BELT,0.0,iShares U.S. Select Equity Active ETF,0.0
+BENF,17.0,Beneficient,0.04553272
+BENFW,12.5,Beneficient,0.0
+BETR,0.0,Better Home & Finance Holding Company,0.678229056
+BETRW,12.5,Better Home & Finance Holding Company,0.0
+BFC,16.5,Bank First Corporation,1.580905344
+BFRG,0.0,"Bullfrog AI Holdings, Inc.",0.018341956
+BFRGW,12.5,"Bullfrog AI Holdings, Inc.",0.0
+BFRI,29.5,Biofrontera Inc.,0.012813156
+BFRIW,12.5,Biofrontera Inc.,0.0
+BFST,41.5,"Business First Bancshares, Inc.",0.948603008
+BGC,0.0,"BGC Group, Inc.",5.601034752
+BGIN,12.5,Bgin Blockchain Limited,0.353549824
+BGL,12.5,Blue Gold Limited,0.043158116
+BGLC,42.0,BioNexus Gene Lab Corp.,0.005318332
+BGLWW,12.5,Blue Gold Limited,0.0
+BGM,25.0,BGM Group Ltd.,0.064801348
+BGMS,25.0,"Bio Green Med Solution, Inc.",0.005795428
+BGRN,0.0,iShares USD Green Bond ETF,0.0
+BGRO,0.0,iShares Large Cap Growth Active ETF,0.0
+BHAV,0.0,BHAV Acquisition Corp Class A Ordinary Shares,0.143298656
+BHAVR,0.0,BHAV Acquisition Corp Rights,0.0
+BHAVU,12.5,BHAV Acquisition Corp,0.0
+BHDG,0.0,Nicholas Bitcoin Tail ETF,0.0
+BHF,29.5,"Brighthouse Financial, Inc.",3.573974528
+BHFAL,12.5,"Brighthouse Financial, Inc.",3.50954624
+BHFAM,12.5,"Brighthouse Financial, Inc.",0.0
+BHFAN,12.5,"Brighthouse Financial, Inc.",0.0
+BHFAO,12.5,"Brighthouse Financial, Inc.",0.0
+BHFAP,29.5,"Brighthouse Financial, Inc.",2.685911296
+BHRB,41.5,Burke & Herbert Financial Services Corp.,0.996324288
+BHST,0.0,BioHarvest Sciences Inc. Common Stock,0.098605112
+BIAF,12.5,"bioAffinity Technologies, Inc.",0.012866307
+BIAFW,25.0,"bioAffinity Technologies, Inc.",0.0
+BIB,0.0,ProShares Ultra Nasdaq Biotechnology,0.0
+BIDG,0.0,Leverage Shares 2X Long BIDU Daily ETF,0.0
+BIDU,58.5,"Baidu, Inc.",42.916069376
+BIIB,25.0,Biogen Inc.,26.027626496
+BILI,62.5,Bilibili Inc.,10.478084096
+BIOA,12.5,"BioAge Labs, Inc.",0.820581632
+BIOX,29.5,Bioceres Crop Solutions Corp.,0.037925784
+BIRD,17.0,"Allbirds, Inc.",0.09404784
+BIS,0.0,ProShares UltraShort Nasdaq Biotechnology,0.0
+BITS,0.0,Global X Blockchain & Bitcoin Strategy ETF,0.0
+BIVI,25.0,BioVie Inc.,0.011763545
+BIVIW,25.0,BioVie Inc.,0.0
+BIXI,12.5,Bitcoin Infrastructure Acquisition Corp Ltd.,0.30254048
+BIXIU,12.5,Bitcoin Infrastructure Acquisition Corp Ltd.,0.0
+BIXIW,12.5,Bitcoin Infrastructure Acquisition Corp Ltd.,0.0
+BIYA,42.0,Baiya International Group Inc.,0.001627519
+BJDX,25.0,"Bluejay Diagnostics, Inc.",0.00206943
+BJRI,17.0,"BJ's Restaurants, Inc.",0.83071776
+BKCH,0.0,Global X Blockchain ETF,0.0
+BKHA,12.5,Black Hawk Acquisition Corporation,0.048264564
+BKHAR,12.5,Black Hawk Acquisition Corporation,0.001863138
+BKHAU,12.5,Black Hawk Acquisition Corporation,0.0
+BKMI,0.0,BNY Mellon Municipal Intermediate ETF,0.0
+BKMS,0.0,BNY Mellon Municipal Short Duration ETF,0.0
+BKNG,58.0,Booking Holdings Inc.,152.039981056
+BKR,12.5,Baker Hughes Company,59.287252992
+BKYI,42.0,"BIO-key International, Inc.",0.006837429
+BL,0.0,"BlackLine, Inc.",1.876785792
+BLBD,42.0,Blue Bird Corporation,2.118002304
+BLCN,0.0,Siren Nasdaq NexGen Economy ETF,0.0
+BLCR,0.0,iShares Large Cap Core Active ETF,0.0
+BLDP,12.5,Ballard Power Systems Inc.,0.890703872
+BLFS,12.5,"BioLife Solutions, Inc.",1.038449984
+BLIN,42.0,"Bridgeline Digital, Inc.",0.011189953
+BLIV,12.5,BeLive Holdings,0.027162004
+BLKB,29.0,"Blackbaud, Inc.",1.854052736
+BLLN,12.5,"BillionToOne, Inc.",3.651064576
+BLMN,17.0,"Bloomin' Brands, Inc.",0.573670208
+BLNE,25.0,"Beeline Holdings, Inc.",0.072940736
+BLNK,29.5,Blink Charging Co.,0.099600096
+BLRK,12.5,Bluerock Acquisition Corp.,0.22793
+BLRKU,12.5,Bluerock Acquisition Corp.,0.0
+BLRKW,12.5,Bluerock Acquisition Corp.,0.0
+BLRX,25.0,BioLineRx Ltd.,0.011023557
+BLSG,0.0,Leverage Shares 2X Long BLSH Daily ETF,0.0
+BLTE,12.5,"Belite Bio, Inc",6.612260864
+BLUW,12.5,Blue Water Acquisition Corp. III,0.331318528
+BLUWU,12.5,Blue Water Acquisition Corp. III,0.0
+BLUWW,12.5,Blue Water Acquisition Corp. III,0.0
+BLZE,0.0,"Backblaze, Inc.",0.24641
+BLZR,12.5,Trailblazer Acquisition Corp.,0.34584688
+BLZRU,12.5,Trailblazer Acquisition Corp.,0.0
+BLZRW,12.5,Trailblazer Acquisition Corp.,0.0
+BMBL,29.5,Bumble Inc.,0.749868416
+BMEA,12.5,"Biomea Fusion, Inc.",0.15978176
+BMGL,17.0,Basel Medical Group Ltd,0.010726663
+BMHL,71.0,Bluemount Holdings Limited,0.091362128
+BMM,12.5,Blue Moon Metals Inc.,0.632267072
+BMNG,0.0,Leverage Shares 2X Long BMNR Daily ETF,0.0
+BMOP,0.0,BNY Mellon Municipal Opportunities ETF,0.0
+BMR,0.0,Beamr Imaging Ltd.,0.028419636
+BMRA,12.5,"Biomerica, Inc.",0.006736789
+BMRC,12.5,Bank of Marin Bancorp,0.42590048
+BMRN,29.0,BioMarin Pharmaceutical Inc.,10.508548096
+BNAI,0.0,"Brand Engagement Network, Inc.",0.222664544
+BNAIW,12.5,"Brand Engagement Network, Inc.",0.0
+BNBX,25.0,BNB Plus Corp.,0.003338139
+BNC,25.0,CEA Industries Inc.,0.120732456
+BNCWW,25.0,CEA Industries Inc.,0.0
+BNCWZ,12.5,CEA Industries Inc.,0.0
+BND,0.0,Vanguard Total Bond Market Index Fund,0.0
+BNDP,0.0,Vanguard Core-Plus Bond Index ETF,0.0
+BNDW,0.0,Vanguard Total World Bond ETF,0.0
+BNDX,0.0,Vanguard Total International Bond Index Fund,0.0
+BNGO,42.0,"Bionano Genomics, Inc.",0.01430868
+BNKK,25.0,"Bonk, Inc.",0.02263154
+BNR,29.5,Burning Rock Biotech Limited,0.222545536
+BNRG,12.5,Brenmiller Energy Ltd,0.001793821
+BNTC,12.5,Benitec Biopharma Inc.,0.482309088
+BNTX,41.5,BioNTech SE,26.026846208
+BNZI,29.5,"Banzai International, Inc.",0.011779913
+BNZIW,12.5,"Banzai International, Inc.",0.0
+BODI,17.0,"The Beachbody Company, Inc.",0.087736232
+BOEG,0.0,Leverage Shares 2X Long BA Daily ETF,0.0
+BOEU,0.0,Direxion Daily BA Bull 2X Shares,0.0
+BOF,0.0,BranchOut Food Inc.,0.068099888
+BOKF,41.5,BOK Financial Corporation,8.39231744
+BOLD,25.0,"Boundless Bio, Inc.",0.03540346
+BOLT,29.5,"Bolt Biotherapeutics, Inc.",0.009089012
+BON,42.0,Bon Natural Life Limited,0.013221843
+BOOM,58.5,DMC Global Inc.,0.10611704
+BOSC,71.0,B.O.S. Better Online Solutions Ltd.,0.032499626
+BOTJ,41.5,"Bank of the James Financial Group, Inc.",0.104996568
+BOTT,0.0,Themes Humanoid Robotics ETF,0.0
+BOTZ,0.0,Global X Robotics & Artificial Intelligence ETF,0.0
+BOXL,29.5,Boxlight Corporation,0.004681997
+BPAC,0.0,Blueport Acquisition Ltd,0.07443828
+BPACR,12.5,Blueport Acquisition Ltd,0.0
+BPACU,0.0,Blueport Acquisition Ltd,0.0
+BPOP,29.0,"Popular, Inc.",9.56382208
+BPOPM,0.0,Popular Capital Trust II PFD GTD 6.125%,0.0
+BPRN,41.5,"Princeton Bancorp, Inc.",0.246695952
+BPYPM,0.0,Brookfield Property Preferred L.P.,0.0
+BPYPN,12.5,Brookfield Property Partners L.P.,0.0
+BPYPO,12.5,Brookfield Property Partners L.P.,0.0
+BPYPP,12.5,Brookfield Property Partners L.P.,10.758362112
+BRAG,42.0,Bragg Gaming Group Inc.,0.053194508
+BRAI,12.5,Braiin Limited,1.382165248
+BRBI,29.5,BRBI BR Partners S.A.,0.408695776
+BRCB,17.0,"Black Rock Coffee Bar, Inc.",0.269181024
+BREM,0.0,iShares Emerging Markets Bond Active ETF,0.0
+BRES,0.0,Burney U.S. Equity Select ETF,0.0
+BRFH,0.0,"Barfresh Food Group, Inc.",0.043483104
+BRHY,0.0,iShares High Yield Active ETF,0.0
+BRID,58.5,Bridgford Foods Corporation,0.065807032
+BRKR,0.0,Bruker Corporation,6.1954816
+BRKRP,0.0,Bruker Corporation,0.0
+BRKU,0.0,Direxion Daily BRKB Bull 2X Shares,0.0
+BRLS,29.5,Borealis Foods Inc.,0.02017551
+BRLSW,12.5,Borealis Foods Inc.,0.0
+BRLT,29.5,"Brilliant Earth Group, Inc.",0.140536384
+BRNS,25.0,Barinthus Biotherapeutics plc,0.024100846
+BRNY,0.0,Burney U.S. Factor Rotation ETF,0.0
+BRR,12.5,"ProCap Financial, Inc.",0.179245984
+BRRR,0.0,CoinShares Bitcoin ETF,0.0
+BRRWW,12.5,"ProCap Financial, Inc.",0.0
+BRTR,0.0,iShares Total Return Active ETF,0.0
+BRTX,12.5,"BioRestorative Therapies, Inc.",0.006718594
+BRZE,12.5,"Braze, Inc.",2.570747648
+BSAA,12.5,BEST SPAC I Acquisition Corp.,0.075992872
+BSAAR,25.0,BEST SPAC I Acquisition Corp.,0.0
+BSAAU,12.5,BEST SPAC I Acquisition Corp.,0.0
+BSBK,12.5,Bogota Financial Corp.,0.11088236
+BSCQ,0.0,Invesco BulletShares 2026 Corporate Bond ETF,0.0
+BSCR,0.0,Invesco BulletShares 2027 Corporate Bond ETF,0.0
+BSCS,0.0,Invesco BulletShares 2028 Corporate Bond ETF,0.0
+BSCT,0.0,Invesco BulletShares 2029 Corporate Bond ETF,0.0
+BSCU,0.0,Invesco BulletShares 2030 Corporate Bond ETF,0.0
+BSCV,0.0,Invesco BulletShares 2031 Corporate Bond ETF,0.0
+BSCW,0.0,Invesco Bulletshares 2032 Corporate Bond ETF,0.0
+BSCX,0.0,Invesco Bulletshares 2033 Corporate Bond ETF,0.0
+BSCY,0.0,Invesco BulletShares 2034 Corporate Bond ETF,0.0
+BSCZ,0.0,Invesco Bulletshares 2035 Corporate Bond ETF,0.0
+BSET,29.5,"Bassett Furniture Industries, Incorporated",0.125142208
+BSJQ,0.0,Invesco BulletShares 2026 High Yield Corporate Bond ETF,0.0
+BSJR,0.0,Invesco BulletShares 2027 High Yield Corporate Bond ETF,0.0
+BSJS,0.0,Invesco BulletShares 2028 High Yield Corporate Bond ETF,0.0
+BSJT,0.0,Invesco BulletShares 2029 High Yield Corporate Bond ETF,0.0
+BSJU,0.0,Invesco Bulletshares 2030 High Yield Corporate Bond ETF,0.0
+BSJV,0.0,Invesco BulletShares 2031 High Yield Corporate Bond ETF,0.0
+BSJW,0.0,Invesco BulletShares 2032 High Yield Corporate Bond ETF,0.0
+BSJX,0.0,Invesco Bulletshares 2033 High Yield Corporate Bond ETF,0.0
+BSMQ,0.0,Invesco BulletShares (R) 2026 Municipal Bond ETF,0.0
+BSMR,0.0,Invesco BulletShares (R) 2027 Municipal Bond ETF,0.0
+BSMS,0.0,Invesco BulletShares (R) 2028 Municipal Bond ETF,0.0
+BSMT,0.0,Invesco BulletShares 2029 Municipal Bond ETF,0.0
+BSMU,0.0,Invesco BulletShares 2030 Municipal Bond ETF,0.0
+BSMV,0.0,Invesco BulletShares 2031 Municipal Bond ETF,0.0
+BSMW,0.0,Invesco Bulletshares 2032 Municipal Bond ETF,0.0
+BSMY,0.0,Invesco Bulletshares 2034 Municipal Bond ETF,0.0
+BSMZ,0.0,Invesco BulletShares 2035 Municipal Bond ETF,0.0
+BSRR,41.5,Sierra Bancorp,0.490537952
+BSSX,0.0,Invesco Bulletshares 2033 Municipal Bond ETF,0.0
+BSVN,41.5,Bank7 Corp.,0.416566112
+BSVO,0.0,EA Bridgeway Omni Small-Cap Value ETF,0.0
+BSY,41.5,"Bentley Systems, Incorporated",10.637894656
+BTAI,12.5,"BioXcel Therapeutics, Inc.",0.031135774
+BTBD,17.0,"BT Brands, Inc.",0.013355754
+BTBDW,12.5,"BT Brands, Inc.",0.0
+BTBT,25.0,"Bit Digital, Inc.",0.515992
+BTCS,12.5,BTCS Inc.,0.099550744
+BTCT,42.0,BTC Digital Ltd.,0.012562407
+BTDR,0.0,Bitdeer Technologies Group,3.132156416
+BTF,0.0,CoinShares Bitcoin and Ether ETF,0.0
+BTGD,0.0,STKd 100% Bitcoin & 100% Gold ETF,0.0
+BTM,17.0,Bitcoin Depot Inc.,0.060147364
+BTMD,29.5,biote Corp.,0.082734968
+BTMWW,12.5,Bitcoin Depot Inc.,0.0
+BTOC,29.5,Armlogi Holding Corp.,0.012465037
+BTOG,12.5,Bit Origin Ltd,0.003832614
+BTQ,0.0,BTQ Technologies Corp.,0.497414464
+BTSG,46.0,"BrightSpring Health Services, Inc.",9.13103872
+BTSGU,29.0,"BrightSpring Health Services, Inc.",0.0
+BTTC,12.5,Black Titan Corporation,0.014791293
+BU,0.0,Defiance Daily Target 2X Long B ETF,0.0
+BUFC,0.0,AB Conservative Buffer ETF,0.0
+BUFI,0.0,AB International Buffer ETF,0.0
+BUFM,0.0,AB Moderate Buffer ETF,0.0
+BUG,0.0,Global X Cybersecurity ETF,0.0
+BULD,0.0,Pacer BlueStar Engineering the Future ETF,0.0
+BULG,0.0,Leverage Shares 2X Long BULL Daily ETF,0.0
+BULL,12.5,Webull Corporation,3.573498368
+BULLW,25.0,Webull Corporation,0.0
+BULX,0.0,GraniteShares 2x Long BULL Daily ETF,0.0
+BUSE,41.5,First Busey Corporation,2.326416384
+BUSEP,41.5,First Busey Corporation,0.0
+BUUU,41.5,BUUU Group Limited,0.255824512
+BVC,0.0,BitVentures Limited,1.795919872
+BVFL,41.5,"BV Financial, Inc.",0.180927792
+BVS,17.0,Bioventus Inc.,0.708711872
+BWAY,41.5,BrainsWay Ltd.,0.632922176
+BWB,58.0,"Bridgewater Bancshares, Inc.",0.533118656
+BWBBP,41.5,"Bridgewater Bancshares, Inc.",0.0
+BWEN,42.0,"Broadwind, Inc.",0.054765628
+BWFG,41.5,"Bankwell Financial Group, Inc.",0.420376736
+BWIN,0.0,"The Baldwin Insurance Group, Inc.",2.42189568
+BWMN,17.0,Bowman Consulting Group Ltd.,0.544870016
+BYAH,42.0,"Park Ha Biological Technology Co., Ltd.",0.003542576
+BYFC,12.5,Broadway Financial Corporation,0.074433056
+BYND,17.0,"Beyond Meat, Inc.",0.38132576
+BYRN,29.5,Byrna Technologies Inc.,0.151086464
+BYSI,12.5,BeyondSpring Inc.,0.071141616
+BZ,70.5,BZ,0.0
+BZAI,12.5,"Blaize Holdings, Inc.",0.30931616
+BZAIW,29.5,"Blaize Holdings, Inc.",0.009249247
+BZFD,29.5,"BuzzFeed, Inc.",0.03006958
+BZFDW,12.5,"BuzzFeed, Inc.",0.0
+BZUN,58.5,Baozun Inc.,0.182451408
+CA,0.0,Xtrackers California Municipal Bond ETF,0.0
+CAAS,87.5,"China Automotive Systems, Inc.",0.129130608
+CABA,12.5,"Cabaletta Bio, Inc.",0.382949984
+CABR,12.5,"Caring Brands, Inc.",0.017831682
+CAC,41.5,Camden National Corporation,0.8691792
+CACC,12.5,Credit Acceptance Corporation,5.8198016
+CADL,0.0,"Candel Therapeutics, Inc.",0.466582912
+CAEP,12.5,"Cantor Equity Partners III, Inc.",0.362376384
+CAFG,0.0,Pacer US Small Cap Cash Cows Growth Leaders ETF,0.0
+CAI,0.0,"Caris Life Sciences, Inc.",5.976564736
+CAIQ,0.0,Calamos Nasdaq Autocallable Income ETF,0.0
+CAKE,29.5,The Cheesecake Factory Incorporated,3.125167872
+CALC,12.5,"CalciMedica, Inc.",0.009493581
+CALI,0.0,iShares Short-Term California Muni Active ETF,0.0
+CALM,42.0,"Cal-Maine Foods, Inc.",3.629046528
+CAMP,12.5,CAMP,0.233117728
+CAMT,0.0,Camtek Ltd.,8.368508928
+CAN,42.0,Canaan Inc.,0.42791952
+CANC,0.0,Tema Oncology ETF,0.0
+CANQ,0.0,Calamos Nasdaq Equity & Income ETF,0.0
+CAPN,12.5,Cayson Acquisition Corp,0.05801038
+CAPNR,12.5,Cayson Acquisition Corp,0.0
+CAPNU,12.5,Cayson Acquisition Corp,0.0
+CAPR,29.0,"Capricor Therapeutics, Inc.",2.007051648
+CAPS,29.5,Capstone Holding Corp.,0.004625007
+CAQ,12.5,Cambridge Acquisition Corp.,0.231430688
+CAQUU,12.5,Cambridge Acquisition Corp.,0.0
+CAQUW,12.5,Cambridge Acquisition Corp.,0.0
+CAR,46.0,"Avis Budget Group, Inc.",17.44544768
+CARE,12.5,"Carter Bankshares, Inc.",0.537488
+CARG,41.5,"CarGurus, Inc.",3.518405376
+CARL,12.5,"Carlsmed, Inc.",0.293517248
+CART,12.5,Maplebear Inc.,9.959057408
+CARY,0.0,Angel Oak Income ETF,0.0
+CARZ,0.0,First Trust S-Network Future Vehicles & Technology ETF,0.0
+CASH,58.0,"Pathward Financial, Inc.",2.219380224
+CASS,41.5,"Cass Information Systems, Inc.",0.629353792
+CAST,12.5,"FreeCast, Inc.",0.14340968
+CASY,41.5,"Casey's General Stores, Inc.",27.975153664
+CATH,0.0,Global X S&P 500 Catholic Values ETF,0.0
+CATY,41.5,Cathay General Bancorp,3.633233152
+CBAT,42.0,"CBAK Energy Technology, Inc.",0.072716184
+CBC,29.0,"Central Bancompany, Inc.",6.15150336
+CBFV,41.5,"CB Financial Services, Inc.",0.176539072
+CBIO,12.5,"Crescent Biopharma, Inc.",0.647907264
+CBK,41.5,"Commercial Bancgroup, Inc.",0.401351008
+CBLL,12.5,CBLL,0.797617664
+CBNK,54.0,"Capital Bancorp, Inc.",0.534311712
+CBRL,17.0,"Cracker Barrel Old Country Store, Inc.",0.67500096
+CBSH,12.5,"Commerce Bancshares, Inc.",7.534370304
+CBUS,0.0,"Cibus, Inc.",0.128496656
+CCAP,29.0,"Crescent Capital BDC, Inc.",0.50204288
+CCB,0.0,Coastal Financial Corporation,1.2688
+CCBG,12.5,"Capital City Bank Group, Inc.",0.803240384
+CCC,29.0,CCC Intelligent Solutions Holdings Inc.,3.424190976
+CCCC,25.0,"C4 Therapeutics, Inc.",0.284928288
+CCD,0.0,Calamos Dynamic Convertible and Income Fund,0.66534816
+CCEC,12.5,Capital Clean Energy Carriers Corp.,1.211187584
+CCEP,41.5,Coca-Cola Europacific Partners PLC,44.011716608
+CCFE,0.0,Concourse Capital Focused Equity ETF,0.0
+CCG,42.0,Cheche Group Inc.,0.060223044
+CCGWW,25.0,Cheche Group Inc.,0.0
+CCHH,17.0,CCH Holdings Ltd,0.012292
+CCII,12.5,Cohen Circle Acquisition Corp. II,0.355953632
+CCIIU,12.5,Cohen Circle Acquisition Corp. II,0.0
+CCIIW,12.5,Cohen Circle Acquisition Corp. II,0.003541367
+CCIX,12.5,Churchill Capital Corp IX,0.395588384
+CCIXU,12.5,Churchill Capital Corp IX,0.0
+CCIXW,12.5,Churchill Capital Corp IX,0.018502
+CCLD,58.5,"CareCloud, Inc.",0.130453344
+CCLDO,25.0,"CareCloud, Inc.",0.0
+CCNE,41.5,CNB Financial Corporation,0.929064256
+CCNEP,41.5,CNB Financial Corporation,0.0
+CCNR,0.0,ALPS/CoreCommodity Natural Resources ETF,0.0
+CCOI,29.5,"Cogent Communications Holdings, Inc.",1.183918848
+CCRN,42.0,"Cross Country Healthcare, Inc.",0.318662784
+CCSB,0.0,Carbon Collective Short Duration Green Bond ETF,0.0
+CCSI,29.5,"Consensus Cloud Solutions, Inc.",0.523989248
+CCSO,0.0,Carbon Collective Climate Solutions U.S. Equity ETF,0.0
+CCTG,42.0,CCSC Technology International Holdings Limited,0.002265914
+CCXI,12.5,Churchill Capital Corp XI,0.567582976
+CCXIU,12.5,Churchill Capital Corp XI,0.0
+CCXIW,12.5,Churchill Capital Corp XI,0.0
+CD,12.5,Chaince Digital Holdings Inc.,0.442312608
+CDC,0.0,VictoryShares US EQ Income Enhanced Volatility Wtd ETF,0.0
+CDIG,0.0,City Different Investments Global Equity ETF,0.0
+CDIO,25.0,"Cardio Diagnostics Holdings, Inc.",0.005948532
+CDIOW,25.0,"Cardio Diagnostics Holdings, Inc.",0.0
+CDL,0.0,VictoryShares US Large Cap High Div Volatility Wtd ETF,0.0
+CDLX,29.5,"Cardlytics, Inc.",0.055621416
+CDNA,12.5,"CareDx, Inc.",1.101687168
+CDNL,12.5,Cardinal Infrastructure Group Inc.,0.789729664
+CDNS,37.5,"Cadence Design Systems, Inc.",85.872910336
+CDRO,12.5,"Codere Online Luxembourg, S.A.",0.41090768
+CDROW,25.0,"Codere Online Luxembourg, S.A.",0.0
+CDT,12.5,CDT Equity Inc.,0.016810124
+CDTG,42.0,CDT Environmental Technology Investment Holdings Limited,0.004870352
+CDTTW,12.5,CDT Equity Inc.,0.0
+CDW,29.5,CDW Corporation,17.279981568
+CDXS,0.0,"Codexis, Inc.",0.235351616
+CDZI,0.0,Cadiz Inc.,0.403773952
+CDZIP,0.0,Cadiz Inc.,0.0
+CECO,12.5,CECO Environmental Corp.,2.339327488
+CEFA,0.0,Global X S&P Catholic Values Developed ex-U.S. ETF,0.0
+CEG,12.5,Constellation Energy Corporation,107.315298304
+CELC,0.0,Celcuity Inc.,5.919309312
+CELH,29.0,"Celsius Holdings, Inc.",9.058404352
+CELU,29.5,Celularity Inc.,0.03547048
+CELUW,12.5,Celularity Inc.,0.0
+CELZ,25.0,"Creative Medical Technology Holdings, Inc.",0.00913077
+CENN,42.0,Cenntro Inc.,0.005802247
+CENT,17.0,Central Garden & Pet Company,2.427184896
+CENTA,29.5,Central Garden & Pet Company,2.208817152
+CENX,16.5,Century Aluminum Company,6.160144896
+CEPF,25.0,"Cantor Equity Partners IV, Inc.",0.586930496
+CEPI,0.0,REX Crypto Equity Premium Income ETF,0.0
+CEPO,12.5,"Cantor Equity Partners I, Inc.",0.270554976
+CEPS,12.5,"Cantor Equity Partners VI, Inc.",0.148584368
+CEPT,12.5,"Cantor Equity Partners II, Inc.",0.341578592
+CEPV,12.5,"Cantor Equity Partners V, Inc.",0.323622208
+CERS,0.0,Cerus Corporation,0.39971728
+CERT,25.0,"Certara, Inc.",0.989848064
+CETX,29.5,"Cemtrex, Inc.",0.01229527
+CETY,12.5,"Clean Energy Technologies, Inc.",0.009855763
+CEVA,12.5,"CEVA, Inc.",0.650001856
+CFA,0.0,VictoryShares US 500 Volatility Wtd ETF,0.0
+CFBK,41.5,CFBK,0.0
+CFFI,41.5,C&F Financial Corporation,0.250273424
+CFFN,41.5,"Capitol Federal Financial, Inc.",1.013389312
+CFO,0.0,VictoryShares US 500 Enhanced Volatility Wtd ETF,0.0
+CG,29.0,The Carlyle Group Inc.,19.026491392
+CGABL,0.0,The Carlyle Group Inc. 4.625% Subordinated Notes due 2061,0.0
+CGBD,12.5,"Carlyle Secured Lending, Inc.",0.86171328
+CGC,25.0,Canopy Growth Corporation,0.511951776
+CGCT,12.5,Cartesian Growth Corporation III,0.355004992
+CGCTU,12.5,Cartesian Growth Corporation III,0.0
+CGCTW,12.5,Cartesian Growth Corporation III,0.0
+CGEM,12.5,"Cullinan Therapeutics, Inc.",0.91152352
+CGEN,25.0,Compugen Ltd.,0.267815792
+CGNT,12.5,Cognyte Software Ltd.,0.728920192
+CGNX,41.5,Cognex Corporation,9.269269504
+CGO,66.5,Calamos Global Total Return Fund,0.125298
+CGON,12.5,"CG Oncology, Inc.",6.2000768
+CGTL,29.5,Creative Global Technology Holdings Limited,0.030355498
+CGTX,12.5,"Cognition Therapeutics, Inc.",0.106331
+CHA,42.0,Chagee Holdings Limited,1.929968512
+CHAI,25.0,Core AI Holdings,0.021516218
+CHAR,12.5,Charlton Aria Acquisition Corporation,0.116448296
+CHARR,12.5,Charlton Aria Acquisition Corporation,0.0
+CHARU,12.5,Charlton Aria Acquisition Corporation,0.0
+CHCI,70.5,"Comstock Holding Companies, Inc.",0.191552704
+CHCO,25.0,City Holding Company,1.825804416
+CHDN,12.5,Churchill Downs Incorporated,6.426702848
+CHEC,12.5,Chenghe Acquisition III Co.,0.17464688
+CHECU,12.5,Chenghe Acquisition III Co.,0.0
+CHECW,12.5,Chenghe Acquisition III Co.,0.0
+CHEF,17.0,"The Chefs' Warehouse, Inc.",2.68398336
+CHGX,0.0,Stance Sustainable Beta ETF,0.0
