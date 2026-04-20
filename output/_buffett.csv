@@ -1,0 +1,8 @@
+ticker,value_score,company_name,mcap_billions,buffett_score,lynch_score,trailingPE,priceToBook
+MCY,70.0,Mercury General Corporation,5.28573696,70.0,70.0,9.767655,2.186655
+PRA,55.0,ProAssurance Corporation,1.272956288,55.0,75.0,24.915152,0.93997943
+TBBK,45.0,"The Bancorp, Inc.",2.584794112,45.0,45.0,12.451219,3.761513
+WD,30.0,"Walker & Dunlop, Inc.",1.749006592,30.0,0.0,31.082317,0.9809675
+PFG,25.0,"Principal Financial Group, Inc.",20.785815552,25.0,45.0,18.259048,1.7534618
+JOBY,25.0,"Joby Aviation, Inc.",8.875215872,25.0,0.0,,5.8809214
+ENVX,0.0,Enovix Corporation,1.4456288,0.0,0.0,,5.1789885

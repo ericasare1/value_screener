@@ -1,5 +1,5 @@
 ticker,value_score,company_name,mcap_billions,buffett_score,lynch_score,trailingPE,priceToBook
-ARLP,70.0,"Alliance Resource Partners, L.P.",3.168866048,70.0,100.0,10.262499,1.7167351
+ARLP,85.0,"Alliance Resource Partners, L.P.",3.168866048,70.0,100.0,10.262499,1.7167351
 MCY,70.0,Mercury General Corporation,5.28573696,70.0,70.0,9.767655,2.186655
-PRA,55.0,ProAssurance Corporation,1.272646528,55.0,75.0,24.90909,0.9397508
+PRA,65.0,ProAssurance Corporation,1.272646528,55.0,75.0,24.90909,0.9397508
 TBBK,45.0,"The Bancorp, Inc.",2.585216,45.0,45.0,12.453252,3.7621272
